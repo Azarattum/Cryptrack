@@ -72,9 +72,12 @@ def interactive():
 
         found = sorted(data, key=lambda x: partial_ratio(
             search.lower(), x["Name"].lower()), reverse=True)
+    
+    curses.endwin()
 
 
 def signal_handler(signal, frame):
+    curses.endwin()
     exit()
 
 
