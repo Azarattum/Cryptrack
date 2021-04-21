@@ -4,7 +4,7 @@ Simple TUI crypto tracking tool with fuzzy search.
 ## Features:
   - Shows current price
   - Shows market cap
-  - Fuzzy search for any currency
+  - Supports fuzzy search by currency name
 
 ## Installation: 
 Clone the repo and install the dependencies:
