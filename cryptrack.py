@@ -65,14 +65,14 @@ def interactive():
             break
         elif c == "\n":
             search = ""
-        elif ord(c) == 127:
+        elif ord(c) == 127 or c == "\b":
             search = search[:-1]
         elif re.match("[A-Za-z0-9.]| ", c):
             search += c
 
         found = sorted(data, key=lambda x: partial_ratio(
             search.lower(), x["Name"].lower()), reverse=True)
-    
+
     curses.endwin()
 
 

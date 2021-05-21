@@ -14,6 +14,11 @@ cd Cryptrack
 pip install -r requirements.txt
 ```
 
+On a windows machine you need to additionaly install windows-curses:
+```sh
+pip install windows-curses
+```
+
 Put your [api key](https://pro.coinmarketcap.com/pricing) in `config.py`:
 ```python
 #Example of a key
